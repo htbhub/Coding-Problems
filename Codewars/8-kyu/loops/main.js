@@ -29,3 +29,13 @@ function rentalCarCost(d) {
   function isDivisible(n, x, y) {
     return n % x === 0 && n % y === 0 ? true : false
   }  
+
+//   Write a function that returns a string in which firstname is swapped with last name.
+
+// Example(Input --> Output)
+
+// "john McClane" --> "McClane john"
+
+function nameShuffler(str){
+  return str.split(' ').reverse().join(' ')
+}
