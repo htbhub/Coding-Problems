@@ -50,3 +50,23 @@ function nameShuffler(str){
 function saleHotdogs(n){
   return n*(n < 5 ? 100 : n >= 5 && n < 10 ? 95 : 90)
 }
+
+
+// Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+
+// Return your answer as a number.
+
+
+function sumMix(x){
+  return x.reduce( (a,b) => a + Number(b),0)
+}
+
+
+// Write a function which calculates the average of the numbers in a given list.
+
+// Note: Empty arrays should return 0.
+
+
+function find_average(array) {
+  return array.length == 0 ? 0 : array.reduce((a,b) => a + b, 0)/array.length 
+}
