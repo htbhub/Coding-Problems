@@ -70,3 +70,9 @@ function sumMix(x){
 function find_average(array) {
   return array.length == 0 ? 0 : array.reduce((a,b) => a + b, 0)/array.length 
 }
+
+// Create a method to see whether the string is ALL CAPS.
+
+String.prototype.isUpperCase = function() {
+  return this.toUpperCase() == this
+}
